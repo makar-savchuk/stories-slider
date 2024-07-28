@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories Slider</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Demo app -->
+    <div class="demo-app">
+      <!-- Demo content -->
+      <div class="demo-title">
+        <img src="images/logo.png" width="156" />
+      </div>
+      <div class="demo-stories">
+        <a href="#">
+          <span class="demo-stories-avatar">
+            <img src="avatars/mark.jpg" alt="">
+          </span>
+          <span class="demo-stories-name">mark_johnson</span>
+        </a>
+        <a href="#">
+          <span class="demo-stories-avatar">
+            <img src="avatars/malenia.jpg" alt="">
+          </span>
+          <span class="demo-stories-name">malenia</span>
+        </a>
+        <a href="#">
+          <span class="demo-stories-avatar">
+            <img src="avatars/john.jpg" alt="">
+          </span>
+          <span class="demo-stories-name">john1986</span>
+        </a>
+      </div>
+      <div class="demo-post">
+        <div class="demo-post-header">
+          <a href="#" data-user-index="0" class="demo-post-avatar">
+            <img src="avatars/mark.jpg" />
+          </a>
+          <div class="demo-post-name">mark_johnson</div>
+          <button class="demo-post-header-actions">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="demo-post-image">
+          <img src="images/food-2.jpg" />
+        </div>
+        <div class="demo-post-footer">
+          <div class="demo-post-footer-actions">
+            <div class="demo-post-footer-actions-left">
+              <button>
+                <img src="icons/like.svg" />
+              </button>
+              <button>
+                <img src="icons/comment.svg" />
+              </button>
+              <button>
+                <img src="icons/send.svg" />
+              </button>
+            </div>
+            <div class="demo-post-footer-actions-right">
+              <button>
+                <img src="icons/bookmark.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="demo-post-likes">
+            Likes: 133
+          </div>
+          <div class="demo-post-content">
+            <span class="demo-post-content-name">mark_johnson</span>
+            <span class="demo-post-content-text">The steak turned out great 😊🥩</span>
+          </div>
+          <div class="demo-post-date">3 hours ago</div>
+        </div>
+      </div>
+
+      <div class="demo-post">
+        <div class="demo-post-header">
+          <a href="#" data-user-index="0" class="demo-post-avatar">
+            <img src="avatars/mark.jpg" />
+          </a>
+          <div class="demo-post-name">mark_johnson</div>
+          <button class="demo-post-header-actions">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="demo-post-image">
+          <img src="images/food-1.jpg" />
+        </div>
+        <div class="demo-post-footer">
+          <div class="demo-post-footer-actions">
+            <div class="demo-post-footer-actions-left">
+              <button>
+                <img src="icons/like.svg" />
+              </button>
+              <button>
+                <img src="icons/comment.svg" />
+              </button>
+              <button>
+                <img src="icons/send.svg" />
+              </button>
+            </div>
+            <div class="demo-post-footer-actions-right">
+              <button>
+                <img src="icons/bookmark.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="demo-post-likes">
+            Likes: 515
+          </div>
+          <div class="demo-post-content">
+            <span class="demo-post-content-name">mark_johnson</span>
+            <span class="demo-post-content-text">Going to cook some steaks today 🥩. Anyone wants to join?</span>
+          </div>
+          <div class="demo-post-date">8 hours ago</div>
+        </div>
+      </div>
+
+      <div class="demo-post">
+        <div class="demo-post-header">
+          <a href="#" data-user-index="1" class="demo-post-avatar">
+            <img src="avatars/malenia.jpg" />
+          </a>
+          <div class="demo-post-name">malenia</div>
+          <button class="demo-post-header-actions">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="demo-post-image">
+          <img src="images/elden-2.jpg" />
+        </div>
+        <div class="demo-post-footer">
+          <div class="demo-post-footer-actions">
+            <div class="demo-post-footer-actions-left">
+              <button>
+                <img src="icons/like.svg" />
+              </button>
+              <button>
+                <img src="icons/comment.svg" />
+              </button>
+              <button>
+                <img src="icons/send.svg" />
+              </button>
+            </div>
+            <div class="demo-post-footer-actions-right">
+              <button>
+                <img src="icons/bookmark.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="demo-post-likes">
+            Likes: 80
+          </div>
+          <div class="demo-post-content">
+            <span class="demo-post-content-name">malenia</span>
+            <span class="demo-post-content-text">Getting close to beat the Elden Ring. The game is truly amazing
+              ⚔️</span>
+          </div>
+          <div class="demo-post-date">9 hours ago</div>
+        </div>
+      </div>
+
+      <div class="demo-post">
+        <div class="demo-post-header">
+          <a href="#" data-user-index="2" class="demo-post-avatar">
+            <img src="avatars/john.jpg" />
+          </a>
+          <div class="demo-post-name">john1986</div>
+          <button class="demo-post-header-actions">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="demo-post-image">
+          <img src="images/vacation-1.jpg" />
+        </div>
+        <div class="demo-post-footer">
+          <div class="demo-post-footer-actions">
+            <div class="demo-post-footer-actions-left">
+              <button>
+                <img src="icons/like.svg" />
+              </button>
+              <button>
+                <img src="icons/comment.svg" />
+              </button>
+              <button>
+                <img src="icons/send.svg" />
+              </button>
+            </div>
+            <div class="demo-post-footer-actions-right">
+              <button>
+                <img src="icons/bookmark.svg" />
+              </button>
+            </div>
+          </div>
+          <div class="demo-post-likes">
+            Likes: 8129
+          </div>
+          <div class="demo-post-content">
+            <span class="demo-post-content-name">john1986</span>
+            <span class="demo-post-content-text">Maldives 🌊🐚🏄‍♂️</span>
+          </div>
+          <div class="demo-post-date">15 hours ago</div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Stories Slider -->
+    <div class="stories-slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- specific user stories -->
+          <div class="swiper-slide">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/mark.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">mark_johnson</div>
+                    <div class="stories-slider-user-date">21h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/food-1.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/mark.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">mark_johnson</div>
+                    <div class="stories-slider-user-date">12h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/food-2.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/mark.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">mark_johnson</div>
+                    <div class="stories-slider-user-date">2h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <video src="video.mp4" playsinline preload="metadata"></video>
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/mark.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">mark_johnson</div>
+                    <div class="stories-slider-user-date">30m</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/food-3.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/mark.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">mark_johnson</div>
+                    <div class="stories-slider-user-date">15m</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/food-4.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- specific user stories -->
+          <div class="swiper-slide">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/malenia.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">malenia</div>
+                    <div class="stories-slider-user-date">5h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/elden-1.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/malenia.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">malenia</div>
+                    <div class="stories-slider-user-date">45m</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/elden-2.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/malenia.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">malenia</div>
+                    <div class="stories-slider-user-date">5m</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/elden-3.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- specific user stories -->
+          <div class="swiper-slide">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/john.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">john1986</div>
+                    <div class="stories-slider-user-date">15h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/vacation-1.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/john.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">john1986</div>
+                    <div class="stories-slider-user-date">10h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/vacation-2.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/john.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">john1986</div>
+                    <div class="stories-slider-user-date">10h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/vacation-3.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/john.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">john1986</div>
+                    <div class="stories-slider-user-date">8h</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/vacation-4.jpg" />
+                  </div>
+                </div>
+                <!-- user's single story -->
+                <div class="swiper-slide">
+                  <a href="#" class="stories-slider-user">
+                    <div class="stories-slider-user-avatar">
+                      <img src="avatars/john.jpg" />
+                    </div>
+                    <div class="stories-slider-user-name">john1986</div>
+                    <div class="stories-slider-user-date">47m</div>
+                  </a>
+                  <div class="stories-slider-actions">
+                    <button class="stories-slider-close-button"></button>
+                  </div>
+                  <div class="stories-slider-content">
+                    <img src="images/vacation-5.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

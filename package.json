@@ -1,0 +1,46 @@
+{
+  "name": "stories-slider",
+  "version": "1.0.0",
+  "description": "Instagram-like Stories Slider Made With Swiper",
+  "scripts": {
+    "start": "npm run core",
+    "dev": "npm run core",
+    "build": "node ./build/build.js",
+    "serve": "vite preview",
+    "====== Run Demo Projects ======": "",
+    "core": "vite demo/core",
+    "react": "vite demo/react",
+    "vue": "vite demo/vue",
+    "====== Build Demo Projects ======": "",
+    "build-core": "vite build ./demo/core",
+    "build-react": "vite build ./demo/react",
+    "build-vue": "vite build ./demo/vue",
+    "====== Lint ======": "",
+    "lint": "eslint --ext .js ../../Desktop/uiinitiative-stories-slider-6a3554d3e03e80e3fbc2d1626494af3a5c821ea1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "clean-css": "^5.3.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-vue": "^8.7.0",
+    "exec-sh": "^0.4.0",
+    "inquirer": "^8.2.2",
+    "prettier": "^2.6.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup": "^2.70.2",
+    "sass": "^1.50.1",
+    "terser": "^5.18.2",
+    "vite": "^2.9.5",
+    "vue": "^3.2.33"
+  },
+  "dependencies": {
+    "swiper": "^10.0.1"
+  }
+}
